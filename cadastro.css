@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Inter;
-    src: url(https://fonts.google.com/share?selection.family=Inter:wght@100..900);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 *{
     margin: 0;
@@ -63,7 +60,7 @@ main{
 
 }
 
-label{
+#label_inputText{
     background-color: white;
     position: relative;
     top: 2.2%;
@@ -72,6 +69,7 @@ label{
     padding: 0% 1.5% 0% 1.5%;
     
 }
+
 
 
 .inputEscrever{
@@ -91,6 +89,17 @@ label{
     font-size: 17px;
 }
 
+#input_senha::placeholder{
+    color: #46494C80;
+    font-size: 0.75rem;
+}
+
+#input_confirmar_senha::placeholder{
+    color: #46494C80;
+    ;
+    font-size: 0.75rem;
+}
+
 .img_visor{
     position: relative;
     margin: 0px 0px -10px -30px;
@@ -98,23 +107,23 @@ label{
  
 
 .inputBotao{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 0.4rem;
     position: relative;
     top: -9px;
+    border: 1px solid #222222;
     
 }
 
 .inputBotao_e_frase{
     display: flex;
     flex-direction: row;
+    text-align: center;
 
 }
 
 
 .botao_e_link{
-    width: 92%;
-
+    width: 26vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,7 +137,7 @@ label{
     font-weight: bold;
 
     background-color: #105F74;
-    width: 100%;
+    width: 25vw;
     height: 5.5vh;
     border-radius: 8px;
     box-shadow: 0;

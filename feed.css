@@ -1,7 +1,5 @@
-@font-face {
-    font-family: Inter;
-    src: url(https://fonts.google.com/share?selection.family=Inter:wght@100..900);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 
 *{
     margin: 0px;
@@ -9,9 +7,10 @@
 }
 
 body{
-    width: 100vw;
+    width: 100vw; 
     height: 100vh;
     max-width: 100%;
+    max-height: 100vh;
     background-color: #181B24;
 
     display: flex;
@@ -40,7 +39,7 @@ header{
 .input_pesquisa{
     margin-left: 5%;
 
-    width: 42vw;
+    width: 40vw;
     height: 3.5vh;
     border-radius:25px;
 
@@ -82,7 +81,8 @@ header{
 }
 
 .container_publicacoes{
-    width: 45vw;
+
+    width: 41.875rem;
 
     display: flex;
     flex-direction: column;
@@ -90,18 +90,15 @@ header{
 }
 
 .container_adicionar_publicacao{
-    width: 88%;
-    height: 13vh;
+    width: 78%;
+    height: 16vh;
 
     display: flex;
     flex-direction: column;
 
     border: 1.55px solid #484848;
     border-radius: 10px;
-    padding-left: 4%;
-    padding-top: 3%; 
-    padding-right: 4%;
-    margin-bottom: 3%;
+    padding: 3% 4% 1% 4%;
 
 }
 
@@ -133,12 +130,31 @@ header{
     background-color:#22A2F2;
     border: none;
     border-radius: 10px;
+    
+    font-size: 100%;
+
+}
+
+.tweets_postados{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+  
+
+    align-items: center;
+
+    padding: 1% 0% 1% 0%;
+    margin-top: 1%;
+    gap: 2%;
+
 }
 
 
 .container_publicacao{
-    width: 87%;
-    height: 70%;
+    width: 85%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,39 +162,47 @@ header{
     border: 1.5px solid #484848;
     border-radius: 15px;
 
-    padding: 3%;
+    padding-top: 5.5%;
+    padding-bottom: 4%;
 }
 
 .foto_garota{
-    width: 60%;
-    height: 80%;
+    width: auto;
+    height: auto;
 }
 
 .container_perfil_publicacao{
-    width: 90%;
+    width: 77%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     margin-top: 2%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
+}
+
+.identificador_perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .icones_interacao_foto{
-    width: 22%;
-    margin-left: 18%;
+    width: 20%;
+    margin-left: 11%;
 }
 
 .legenda_publicacao{
     color: #FFFFFF;
+    max-width: 75%;
+    word-break: break-all;
 }
 
 section{
     width: 30%;
     display: flex;
     flex-direction: column;
-
     margin-left: 7.6%;
 
 }
@@ -195,8 +219,8 @@ section{
 }
 
 .foto_perfil{
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 4.4vh;
     border-radius: 100%;
     background-color: #D9D9D9;
     margin-right: 2%;

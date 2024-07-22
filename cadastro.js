@@ -1,3 +1,6 @@
+const botaoCadastro = document.getElementById("botaoCadastro")
+
+
 function mudarVisibilidadeSenha(){
     const inputSenha = document.querySelector("input#input_senha")
     const iconeSenha = document.querySelector("img#img_visor_senha")
@@ -27,6 +30,10 @@ function mudarVisibilidadeConfirmarSenha(){
 
 }
 
-function entrarPaginaFeed(){
-    window.location.href = 'feed.html';
+
+function entrarPaginaFeed(e){
+    window.location.href = 'feed.html'
+    e.preventDefault();
 }
+
+botaoCadastro.addEventListener('click', entrarPaginaFeed)

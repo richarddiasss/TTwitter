@@ -1,7 +1,5 @@
-@font-face {
-    font-family: Inter;
-    src: url(https://fonts.google.com/share?selection.family=Inter:wght@100..900);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 
 *{
     margin: 0;
@@ -72,6 +70,12 @@ label{
 .inputEscrever::placeholder{
     color: #46494C80;
     font-size: 1.1rem;
+
+}
+
+.inputEscrever_senha::placeholder{
+    color: #46494C80;
+    font-size: 0.75rem;
 
 }
 
