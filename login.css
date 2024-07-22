@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Inter;
+    src: url(https://fonts.google.com/share?selection.family=Inter:wght@100..900);
+}
+
+*{
+    margin: 0;
+    font-family: Inter;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #181B24;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.espaco_login{
+    width: 27vw;
+    height: 56vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 50px;   
+
+    position: relative;
+    right: 7%;
+ 
+}
+
+.texto_boasvindas{
+    font-size: 165%;
+    margin-bottom: 6%;
+}
+
+.formularioLogin{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    background-color: #F2F2F2;
+    position: relative;
+    width: 2.8vw;
+    top: 1.2vh;
+    left: 0.8vw;
+    
+    padding-left: 1%;
+    
+}
+
+.inputEscrever{
+    margin-bottom: 5%;
+    height: 5.5vh;
+    border-radius: 8px;
+    padding-left: 4%; 
+    border: 1px solid #222222;
+    background-color: #F2F2F2;
+
+    margin-bottom: 2.5%;
+}
+
+.inputEscrever::placeholder{
+    color: #46494C80;
+    font-size: 1.1rem;
+
+}
+
+.input_senha_icone{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5.5vh;
+
+}
+
+.inputEscrever_senha{
+    width: 100%;
+    height: 5.5vh;
+    border-radius: 8px;
+    padding-left: 4%;
+    border: 1px solid #222222;
+    background-color: #F2F2F2;
+}
+
+.Icone_visibilidade{
+    position: absolute;
+    right: 16%;
+}
+
+
+.link_esqueceu_senha{
+    position: relative;
+    right: -29%;
+    text-decoration: none;
+    margin-top: 4%;
+
+
+}
+
+.botao_entrar{
+    width: 90%;
+    height: 5.5vh;
+    
+    margin: 6% 0% 5% 0%;
+
+    border-radius: 8px;
+    background-color: #105F74;
+    color: #FFFFFF;
+    
+    font-weight: bold;
+    font-size: 100%;
+    border: 0px ;
+
+}
+
+.link_resgistrar{
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 100;
+    margin-bottom: 12%;
+}
+
+.frase_final{
+    font-size: 110%;
+    margin: 0px;
+}
+
+a{
+    color: #105F74;
+}

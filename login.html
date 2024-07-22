@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="login.css" media="screen" />
+</head>
+<body>
+
+    <div>
+        <img src="Union.png" alt="logo_TTwitter">
+    </div>
+
+    <main class="espaco_login">
+
+        <h1 class="texto_boasvindas">Bem vindo a plataforma TTwiter</h1>
+        <form class="formularioLogin">
+
+        <label for="email">Email</label> 
+        <input type="email" placeholder="example@email.com" class="inputEscrever"/>
+        
+        <label for="senha">Senha</label> 
+        <div class="input_senha_icone">
+            <input type="password" placeholder=". . . ." class="inputEscrever_senha"/>
+            <img src="invisible.png" alt="Icone_visibilidade" class="Icone_visibilidade" onclick="mudarVisibilidade()">
+        </div>
+       
+        </form>       
+
+        <a href="link_esqueceu_senha" class="link_esqueceu_senha">Esqueci minha senha</a>
+
+        <button class="botao_entrar" onclick="entrarPaginaFeed()">Entrar</button> 
+        <a href="cadastro.html" class="link_resgistrar" >Registrar</a>
+
+        <p class="frase_final">Li e estou de acordo com os <a href="">Termos</a> e <a href="">Condições <br/> de uso.</a></p>
+               
+        
+    </main>
+
+    <script src="login.js"></script>
+    
+
+    
+</body>
+</html>

@@ -10,36 +10,51 @@
 <body>
     <main>
         <section class="cadastro">
-            <h1>Cadastro</h1> 
+            <h1 class="tituloCadastro">Cadastro</h1> 
             <form class="formulario">
-               <label>Nome</label> 
+               <label for="username">Nome</label> 
                 <input type="text" placeholder="nome de usuário" class="inputEscrever"/>
                
-                <label>Email</label> 
+                <label for="email">Email</label> 
                 <input type="email" placeholder="example@email.com" class="inputEscrever"/>
                
-                <label>Data de nascimento</label> 
+                <label for="date">Data de nascimento</label> 
                 <input type="datetime" placeholder="xx/xx/xxxx" class="inputEscrever"/>
-               
-                <label>Senha</label>
-                <input type="password" placeholder=". . . ." class="inputEscrever"/>
                 
-                <label>Confirmar senha</label> 
-                <input type="password" placeholder=". . . ." class="inputEscrever"/>
+                <label for="password">Senha</label>
+                <div class="espaco_password">
+                    <input type="password" placeholder=". . . ." class="inputEscrever" id="input_senha" />
+                    <img src="invisible.png" alt="visibility" class="img_visor" id="img_visor_senha"onclick="mudarVisibilidadeSenha()">
+                </div>
+                 
+                <label for="confirmPassword">Confirmar senha</label> 
+                <div class="espaco_confirmPassword">
+                    <input type="password" placeholder=". . . ." class="inputEscrever" id="input_confirmar_senha"/>
+                    <img src="invisible.png" alt="visibility" class="img_visor" id="img_visor_confirmar_senha" onclick="mudarVisibilidadeConfirmarSenha()">
+                </div>
                 
-                <input type="checkbox" class="inputBotao"/>
+                <div class="inputBotao_e_frase">
+                    <input type="checkbox" class="inputBotao"/>
+                    <p>Li e estou de acordo com os <a href="">Termos</a> e <a href="">Condições <br/> de uso.</a></p>
+                </div>
+                
+
             </form>
-             <div class="botao_e_link">
-                <button class="botaoCadastro">Cadastrar</button>
-                <a href="login.html">Fazer login</a>
-             </div>   
+            
+            <div class="botao_e_link">
+                <button class="botaoCadastro" onclick="entrarPaginaFeed()">Cadastrar</button>
+                <a href="login.html" class="botao_login">Fazer login</a>
+            </div>   
             
             
         </section>
-        <div>
+
+        <div class="img_logo">
             <img src="Union.png" alt="Logo do TTwitter">
         </div>
     </main>
     
 </body>
+
+<script src="cadastro.js"></script>
 </html>
