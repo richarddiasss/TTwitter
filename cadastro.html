@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" type="text/css" href="cadastro.css" media="screen" />
 </head>
 
@@ -12,22 +12,23 @@
         <section class="cadastro">
             <h1 class="tituloCadastro">Cadastro</h1> 
             <form class="formulario">
-               <label>Nome</label> 
+                
+                <label id="label_input">Nome</label> 
                 <input type="text" placeholder="nome de usuário" class="inputEscrever"/>
                
-                <label id="label_inputText">Email</label> 
+                <label id="label_input">Email</label> 
                 <input type="email" placeholder="example@email.com" class="inputEscrever"/>
                
-                <label id="label_inputText">Data de nascimento</label> 
-                <input type="datetime" placeholder="xx/xx/xxxx" class="inputEscrever"/>
+                <label id="label_input">Data de nascimento</label> 
+                <input type="text" placeholder="xx/xx/xxxx" class="inputEscrever" pattern="\d{2}/\d{2}/\d{4}" id="inputDate" onmouseover="MudarParaDate()"/>
                 
-                <label id="label_inputText">Senha</label>
+                <label id="label_input">Senha</label>
                 <div class="espaco_password">
                     <input type="password" placeholder="⬤  ⬤  ⬤  ⬤  ⬤  ⬤  ⬤  ⬤  ⬤" class="inputEscrever" id="input_senha" />
                     <img src="invisible.png" alt="visibility" class="img_visor" id="img_visor_senha"onclick="mudarVisibilidadeSenha()">
                 </div>
                  
-                <label id="label_inputText">Confirmar senha</label> 
+                <label id="label_input">Confirmar senha</label> 
                 <div class="espaco_confirmPassword">
                     <input type="password" placeholder="⬤  ⬤  ⬤  ⬤  ⬤  ⬤  ⬤  ⬤  ⬤" class="inputEscrever" id="input_confirmar_senha"/>
                     <img src="invisible.png" alt="visibility" class="img_visor" id="img_visor_confirmar_senha" onclick="mudarVisibilidadeConfirmarSenha()">
@@ -35,21 +36,19 @@
                 
                 <div class="inputBotao_e_frase">
                     <input type="checkbox" class="inputBotao"/>
-                    <label id="label_inputButton">Li e estou de acordo com os <a href="">Termos</a> e <a href="">Condições <br/> de uso.</label> 
+                    <label id="label_inputButton">Li e estou de acordo com os <a href="" >Termos</a> e <a href="">Condições de uso.</label> 
                 </div>
-                
+
+                <button class="botaoCadastro" id="botaoCadastro" type="button">Cadastrar</button>
 
             </form>
-            
-            <div class="botao_e_link">
-                <button class="botaoCadastro" id="botaoCadastro" type="button">Cadastrar</button>
-                <a href="login.html" class="botao_login">Fazer login</a> 
-            </div>  
+                
+            <a href="login.html" class="botao_login">Fazer login</a> 
             
         </section>
 
-        <div class="img_logo">
-            <img src="Union.png" alt="Logo do TTwitter">
+        <div class="container_img_logo">
+            <img src="Union.png" alt="Logo do TTwitter" class="img_logo">
         </div>
     </main>
     

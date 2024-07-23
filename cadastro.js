@@ -36,4 +36,11 @@ function entrarPaginaFeed(e){
     e.preventDefault();
 }
 
+function MudarParaDate(){
+    const date = document.getElementById("inputDate")
+    date.type = "date"
+    console.log("teste")
+}
+
+
 botaoCadastro.addEventListener('click', entrarPaginaFeed)

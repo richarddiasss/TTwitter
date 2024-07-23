@@ -26,14 +26,20 @@
                 <input type="text" placeholder="No que está pensando...?" class="input_adicionar_publicacao">
                 
                 <div class="itens_adicionar_publicacao">
-                    <img src="Frame 53.png" alt="figurinhas">
+                    <div class="emojis_adicionar_publicacao">
+                        <label for="btn-1"><img src="foto.png" alt="figurinhas" id="botao_publicar_foto"></label>
+                        <input type="file" id="btn-1" accept="image/gif, image/png, image/jpg, image/jpeg" >
+                        <img src="emoji.png" alt="figurinhas" id="botao_publicar_foto">
+                        <img src="anexar.png" alt="figurinhas" id="botao_publicar_foto">
+                    </div>
+                    
                     <button class="botao_postar" id="botao_postar">Postar</button>
                 </div>
             </div>
 
             <div class="tweets_postados">
                 <div class="container_publicacao">
-                    <img src="image 16.png" alt="" class="foto_garota">
+                    <img src="image 16.png" alt="" class="foto_post" id="foto_post">
                     <div class="container_perfil_publicacao">
                         <div class="identificador_perfil">
                             <img src="gatinho.jpeg" alt="imagem_gatinha" class="foto_perfil">
@@ -49,31 +55,34 @@
             </div>
         </main>
 
-        <section>
+        <section class="opcoes_possiveis_amigos">
             <h2 class="nome_section">Pessoas que voce talvez <br> conheça</h2>
-            <div class="usuario_desconhecido">
-                <img src="gatinho.jpeg" alt="imagem_gatinha" class="foto_perfil">
-                <p class="nome_perfil">@usuario</p>
-                <button class="botao_adicionar">Adicionar</button>
+            <div class="container_usuarios_desconhecidos">
+                <div class="usuario_desconhecido">
+                    <img src="gatinho.jpeg" alt="imagem_gatinha" class="foto_perfil">
+                    <p class="nome_perfil">@usuario</p>
+                    <button class="botao_adicionar">Adicionar</button>
+                </div>
+    
+                <div class="usuario_desconhecido">
+                    <img src="gatinho.jpeg" alt="imagem_gatinha" class="foto_perfil">
+                    <p class="nome_perfil">@usuario</p>
+                    <button class="botao_adicionar">Adicionar</button>
+                </div>
+    
+                <div class="usuario_desconhecido">
+                    <img src="gatinho.jpeg" alt="imagem_gatinha" class="foto_perfil">
+                    <p class="nome_perfil">@usuario</p>
+                    <button class="botao_adicionar">Adicionar</button>
+                </div>
+    
+                <div class="usuario_desconhecido">
+                    <img src="gatinho.jpeg" alt="imagem_gatinha" class="foto_perfil">
+                    <p class="nome_perfil">@usuario</p>
+                    <button class="botao_adicionar">Adicionar</button>
+                </div> 
+                
             </div>
-
-            <div class="usuario_desconhecido">
-                <img src="gatinho.jpeg" alt="imagem_gatinha" class="foto_perfil">
-                <p class="nome_perfil">@usuario</p>
-                <button class="botao_adicionar">Adicionar</button>
-            </div>
-
-            <div class="usuario_desconhecido">
-                <img src="gatinho.jpeg" alt="imagem_gatinha" class="foto_perfil">
-                <p class="nome_perfil">@usuario</p>
-                <button class="botao_adicionar">Adicionar</button>
-            </div>
-
-            <div class="usuario_desconhecido">
-                <img src="gatinho.jpeg" alt="imagem_gatinha" class="foto_perfil">
-                <p class="nome_perfil">@usuario</p>
-                <button class="botao_adicionar">Adicionar</button>
-            </div> 
 
         </section>
 
