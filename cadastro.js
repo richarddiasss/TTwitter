@@ -13,10 +13,10 @@ function mudarVisibilidade() {
 
     if (inputSenha.type === "text") {
         inputSenha.type = "password";
-        iconeSenha.src = "IMG/invisible.png";
+        iconeSenha.src = "img/invisible.png";
     } else {
         inputSenha.type = "text";
-        iconeSenha.src = "IMG/visibility.png";
+        iconeSenha.src = "img/visibility.png";
     }
 }
 
