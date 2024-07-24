@@ -61,6 +61,7 @@ label{
     padding-left: 4%; 
     border: 1px solid #222222;
     background-color: #F2F2F2;
+    outline: none;
 
     margin-bottom: 2.5%;
 }
@@ -95,6 +96,8 @@ label{
     padding-left: 5%;
     border: 1px solid #222222;
     background-color: #F2F2F2;
+
+    outline: none;
 }
 
 .Icone_visibilidade{

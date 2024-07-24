@@ -36,5 +36,9 @@ function adicionarTweet(){
     containerPostagens.insertAdjacentElement('afterbegin', publicacaoNova)
 
     inputLegenda.value = ""
-    document.getElementById('btn-1').files[0] = ""
+    document.getElementById('btn-1').value = ""
+}
+
+function sairHome() {
+    window.location.href = 'index.html'
 }

@@ -43,7 +43,7 @@ header{
 
     background-color: #484848;
     background-repeat: no-repeat;
-    background-image: url(Vector.png);
+    background-image: url(IMG/Vector.png);
     background-position: 97%;
     background-size: 2.7%;
 
@@ -301,6 +301,7 @@ section{
         width: 100%;
         gap: 30px;
         margin: 0;
+       
         
     }
 
@@ -354,8 +355,13 @@ section{
         width: 90%;
         align-items: center;
         max-height: calc(100vh - 60px - 60px);
-        overflow-y: scroll;
+        
     }
+
+    .tweets_postados{
+        padding-bottom: 80px;
+    }
+    
 
     section{
         width: 95%;

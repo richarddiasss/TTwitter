@@ -5,10 +5,10 @@ function mudarVisibilidade(){
 
     if(inputSenha.type == "text"){
         inputSenha.type = "password"
-        iconeSenha.src = "invisible.png"
+        iconeSenha.src = "IMG/invisible.png"
     }else{
         inputSenha.type = "text"
-        iconeSenha.src = "visibility.png"
+        iconeSenha.src = "IMG/visibility.png"
     }
 
 
