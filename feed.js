@@ -35,4 +35,6 @@ function adicionarTweet(){
 
     containerPostagens.insertAdjacentElement('afterbegin', publicacaoNova)
 
+    inputLegenda.value = ""
+    document.getElementById('btn-1').files[0] = ""
 }
